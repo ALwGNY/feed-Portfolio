@@ -1,0 +1,6 @@
+@use "./theme";
+
+.fa-solid {
+    font-size: theme.$fs-16;
+    color: theme.$grey-dark;
+}

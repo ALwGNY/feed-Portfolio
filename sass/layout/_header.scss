@@ -1,0 +1,105 @@
+@use "../base";
+
+// NAVBAR
+.l-header {  
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 12px;
+        align-self: center;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(base.$white-main, 0.4);
+        &__link {
+            display: flex;
+        }
+        &__button-toggle {
+            border:none;
+        }
+        &__button-toggle:hover {
+            background-color: base.$grey-light;
+            border-radius: 3px;
+        }
+    }
+}
+
+// HERO SECTION
+
+.l-header { 
+    &__container {
+        padding-block-start: 51px;
+    }   
+    &__content {
+        padding: 0 30px;
+    }
+    &__avatar {
+        border: 3px solid base.$white-main;
+        background-color: base.$white-main;
+        border-radius: 70px;
+        margin-top: -75px;
+    }
+    &__button-contact {
+        display: flex;
+        justify-content: end;
+        margin-top: -65px;
+    }
+    &__button-shape {
+        background-color: base.$blue-main;
+        width: 125px;
+        block-size: 35px;
+        border-radius: 17px;
+        display: flex;
+        padding: 0 15px;
+        justify-content: space-between;
+        align-items: center;
+        color: base.$white-main;
+        font-weight: 600;
+    }
+    &__description {
+        padding-block-start: 35px;
+    }
+    &__title {
+        font-size: base.$fs-32;
+    }
+    &__title-certificate {
+        position: relative;
+        padding-inline-start: 10px;
+        img {
+            position: absolute;
+            top: 27%;
+            left: 17.5px;
+        }
+        i {
+            padding: 2px 0;
+            position: absolute;
+            width: 24px;
+            font-size: 30px;
+            color: base.$blue-main;
+        }
+    }
+    &__subtitle {
+        padding-block-start: 2px;
+        line-height: 1.7;
+        color: base.$grey-dark;
+    }
+    &__subtitle-presentation {
+        padding-block-start: 10px;
+        color: base.$grey-light;
+    }
+    &__list-info {
+        padding-block-start: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        padding-inline-end: 30px;
+        p {
+            font-size: base.$fs-14;
+            color: base.$grey-light;
+        }
+    }
+}
+
