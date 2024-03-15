@@ -1,0 +1,16 @@
+@use "../base";
+.footer {
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-block-start: 50px;
+    }
+    &__link i {
+      font-size: base.$fs-20;
+    }
+    &__copyright {
+      margin-block: 10px;
+      font-size: base.$fs-14;
+    }
+  }

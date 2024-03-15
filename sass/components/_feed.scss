@@ -1,0 +1,26 @@
+.home-main {
+  &__card-feed.active {
+    display: block;
+  }
+  &__card-feed {
+    padding-block-start: 15px;
+    display: none;
+  }
+  &__card-img {
+    margin-block-start: 20px;
+    width: 570px;
+    height: 325px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    & img {
+      object-fit: cover;
+      object-position: top;
+      box-shadow: 3px 3px 14px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+    &__side-right img {
+      height: 160px;
+    }
+  }
+}

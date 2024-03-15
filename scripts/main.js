@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const categoryId = category.id;
 
       const allCategoryContents = document.querySelectorAll(
-        ".home-main__card-feed"
+        ".home-main_section"
       );
       allCategoryContents.forEach(function (content) {
         content.classList.remove("active");
@@ -24,6 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const defaultCategory = document.getElementById("feed");
+  const defaultCategory = document.getElementById("expetises");
   defaultCategory.click();
 });

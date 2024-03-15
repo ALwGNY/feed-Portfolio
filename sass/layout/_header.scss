@@ -60,30 +60,33 @@
     }
     &__title {
         font-size: base.$fs-32;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     &__title-certificate {
         position: relative;
         padding-inline-start: 10px;
         img {
-            position: absolute;
-            top: 27%;
-            left: 17.5px;
+           height: 12px;
+           position: absolute;
+           top: 20px;
+           left: 15px;
         }
         i {
-            padding: 2px 0;
-            position: absolute;
-            width: 24px;
-            font-size: 30px;
             color: base.$blue-main;
+            font-size: 24px;
         }
     }
     &__subtitle {
-        padding-block-start: 2px;
+        margin-block-start: 5px;
         line-height: 1.7;
         color: base.$grey-dark;
+        font-weight: 600;
     }
     &__subtitle-presentation {
-        padding-block-start: 10px;
+        padding-block-start: 5px;
+        font-size: base.$fs-16;
         color: base.$grey-light;
     }
     &__list-info {

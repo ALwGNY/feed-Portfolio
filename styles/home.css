@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -16,6 +17,13 @@ img {
 .fa-solid {
   font-size: 1rem;
   color: #434f58;
+}
+
+.u-container {
+  max-inline-size: 724px;
+  width: 100%;
+  margin-inline: auto;
+  font-family: "Open Sans", sans-serif;
 }
 
 .l-header .navbar {
@@ -72,30 +80,33 @@ img {
 }
 .l-header__title {
   font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .l-header__title-certificate {
   position: relative;
   padding-inline-start: 10px;
 }
 .l-header__title-certificate img {
+  height: 12px;
   position: absolute;
-  top: 27%;
-  left: 17.5px;
+  top: 20px;
+  left: 15px;
 }
 .l-header__title-certificate i {
-  padding: 2px 0;
-  position: absolute;
-  width: 24px;
-  font-size: 30px;
   color: #1DA1F2;
+  font-size: 24px;
 }
 .l-header__subtitle {
-  padding-block-start: 2px;
+  margin-block-start: 5px;
   line-height: 1.7;
   color: #434f58;
+  font-weight: 600;
 }
 .l-header__subtitle-presentation {
-  padding-block-start: 10px;
+  padding-block-start: 5px;
+  font-size: 1rem;
   color: #5d6e7c;
 }
 .l-header__list-info {
@@ -114,56 +125,20 @@ img {
   color: #5d6e7c;
 }
 
-.u-container {
-  max-inline-size: 724px;
-  width: 100%;
-  margin-inline: auto;
-  font-family: "Helvetica Neue", sans-serif;
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-start: 50px;
+}
+.footer__link i {
+  font-size: 1.25rem;
+}
+.footer__copyright {
+  margin-block: 10px;
+  font-size: 0.875rem;
 }
 
-.home-main__list {
-  font-weight: 600;
-  color: #434f58;
-  display: flex;
-  justify-content: space-around;
-  padding-block-start: 20px;
-}
-.home-main__category {
-  display: flex;
-  justify-content: center;
-  padding: 17px 0;
-  width: 100%;
-  position: relative;
-}
-.home-main__category::after {
-  content: "";
-  position: absolute;
-  display: block;
-  bottom: 0;
-  height: 3px;
-  width: 60%;
-  transition: transform 0.2s ease-out;
-  transform: scaleX(0);
-  background-color: #1DA1F2;
-  transform-origin: center;
-}
-.home-main__category.active::after {
-  transform: scaleX(1);
-}
-.home-main__category.active {
-  background-color: #F5F8FA;
-}
-.home-main__category:hover {
-  background-color: #F5F8FA;
-}
-
-.home-main__card-feed {
-  padding-block-start: 15px;
-  display: none;
-}
-.home-main__card-feed.active {
-  display: block;
-}
 .home-main__card {
   padding: 16px;
 }
@@ -232,6 +207,89 @@ img {
 }
 .home-main__card-action .fa-heart {
   opacity: 0.3;
+}
+
+.home-main__card-feed.active {
+  display: block;
+}
+.home-main__card-feed {
+  padding-block-start: 15px;
+  display: none;
+}
+.home-main__card-img {
+  margin-block-start: 20px;
+  width: 570px;
+  height: 325px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.home-main__card-img img {
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 3px 3px 14px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.home-main__card-img__side-right img {
+  height: 160px;
+}
+
+.home-main__about.active {
+  display: block;
+}
+.home-main__about {
+  padding-block-start: 15px;
+  display: none;
+}
+.home-main__about-container {
+  padding: 30px;
+}
+.home-main__about-title {
+  font-size: 2rem;
+  margin-block-start: 20px;
+}
+.home-main__about-subtitle {
+  margin-block-start: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #434f58;
+}
+
+.home-main__list {
+  font-weight: 600;
+  color: #434f58;
+  display: flex;
+  justify-content: space-around;
+  padding-block-start: 20px;
+}
+.home-main__category {
+  display: flex;
+  justify-content: center;
+  padding: 17px 0;
+  width: 100%;
+  position: relative;
+}
+.home-main__category::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  height: 3px;
+  width: 60%;
+  transition: transform 0.2s ease-out;
+  transform: scaleX(0);
+  background-color: #1DA1F2;
+  transform-origin: center;
+}
+.home-main__category.active::after {
+  transform: scaleX(1);
+}
+.home-main__category.active {
+  background-color: #F5F8FA;
+}
+.home-main__category:hover {
+  background-color: #F5F8FA;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=home.css.map */

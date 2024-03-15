@@ -1,0 +1,24 @@
+@use "../base";
+
+.home-main {
+    &__about.active {
+        display: block;
+      }
+    &__about {
+       padding-block-start: 15px;
+       display: none;
+    }
+    &__about-container {
+        padding: 30px;
+    }
+    &__about-title {
+        font-size: base.$fs-32;
+        margin-block-start: 20px;
+    }
+    &__about-subtitle {
+        margin-block-start: 20px;
+        font-size: base.$fs-16;
+        font-weight: 500;
+        color: base.$grey-dark;      
+    }
+}

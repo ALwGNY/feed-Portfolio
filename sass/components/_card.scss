@@ -1,0 +1,73 @@
+@use "../base";
+
+.home-main {
+    &__card {
+      padding: 16px;
+    }
+    &__card:hover {
+      background-color: base.$grey-extra-light;
+    }
+    &__pinned {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      padding-inline-start: 27px;
+      padding-block-end: 10px;
+    }
+    &__pinned-text {
+      color: base.$grey-light;
+      font-size: base.$fs-14;
+    }
+    &__card-content {
+      display: flex;
+    }
+    &__card-avatar {
+      width: 40px;
+      height: 40px;
+    }
+    &__card-content-description {
+      padding: 0 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__card-name-date {
+      display: flex;
+      flex-direction: row;
+      font-weight: 700;
+      gap: 10px;
+    }
+    &__card-date {
+      font-weight: 300;
+      font-size: base.$fs-14;
+      color: base.$grey-light;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      .fa-solid {
+        font-size: 4px;
+      }
+    }
+    &__card-tag {
+      background-color: base.$grey-extra-light;
+      margin-block: 10px;
+      padding: 4px 7px;
+      border-radius: 12px;
+      font-weight: 700;
+      max-inline-size: max-content;
+    }
+    &__card-subtitle {
+      color: base.$grey-dark;
+      padding-block-start: 15px;
+    }
+    &__card-action {
+      padding-block-start: 35px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      font-size: base.$fs-20;
+      .fa-heart {
+        opacity: 0.3;
+      }
+    }
+  }
