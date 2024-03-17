@@ -1,11 +1,10 @@
 @use "../base";
 @use "../layout/container";
 @use "../layout/header";
-@use "../layout/footer";
-@use "../components/card";
 @use "../components/feed";
 @use "../components/about";
 @use "../components/expertises";
+@use "../layout/footer";
 
 // CATEGORY
 .home-main {

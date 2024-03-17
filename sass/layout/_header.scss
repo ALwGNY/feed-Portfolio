@@ -106,3 +106,18 @@
     }
 }
 
+@media (max-width: 740px) {
+    .l-header{
+        &__banner{
+            width: 100%;
+
+        }
+        &__avatar {
+            width: 100px;
+            margin-top: -55px;
+        }
+        &__button-contact {
+            margin-top: -45px;
+        }
+    }
+  }
