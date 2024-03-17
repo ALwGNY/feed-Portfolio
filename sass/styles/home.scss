@@ -5,6 +5,7 @@
 @use "../components/card";
 @use "../components/feed";
 @use "../components/about";
+@use "../components/expertises";
 
 // CATEGORY
 .home-main {
@@ -31,7 +32,7 @@
     width: 60%;
     transition: transform 0.2s ease-out;
     transform: scaleX(0);
-    background-color: base.$blue-main;
+    background-color: base.$orange-main;
     transform-origin: center;
   }
   &__category.active::after {

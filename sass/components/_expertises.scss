@@ -1,0 +1,57 @@
+@use "../base";
+
+.home-main {
+    &__expertises.active {
+      display: block;
+    }
+    &__expertises {
+      padding-block-start: 15px;
+      display: none;
+    }
+    &__expertises-container {
+        padding: 30px;
+    }
+    &__expertises-surtitle {
+        margin-block-start: 20px;
+        font-size: base.$fs-16;
+        font-weight: 500;
+        color: base.$grey-dark;      
+    }
+    &__expertises-title {
+        font-size: base.$fs-24;
+        margin-block-start: 10px;      
+    }
+    &__expertises-title-underline-JS {
+        display: inline-block;
+        background-color: #ffd000;
+        line-height: 0.3px;
+        padding-bottom: 7px;
+    }
+    &__expertises-title-underline-React {
+        display: inline-block;
+        background-color: #61DBFB;
+        line-height: 0.3px;
+        padding-bottom: 7px;
+    }
+    &__expertises-title-underline-Sass {
+        display: inline-block;
+        background-color: #CC6699;
+        line-height: 0.3px;
+        padding-bottom: 7px;
+    }
+    &__expertises-subtitle-container {
+        display: flex;
+        flex-direction: row;
+        padding: 25px 10px 15px;
+    }
+    &__expertises-img {
+        height: 50px;
+        width: 50px;
+    }
+    &__expertises-subtitle {
+        margin-inline-start: 20px;
+        font-size: base.$fs-16;
+        font-weight: 500;
+        color: base.$grey-dark;      
+    }
+}
