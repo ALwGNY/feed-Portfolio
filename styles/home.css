@@ -20,9 +20,8 @@ img {
 }
 
 .u-container {
-  max-inline-size: 724px;
-  width: 100%;
-  margin-inline: auto;
+  max-width: 724px;
+  margin: auto;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -64,7 +63,7 @@ img {
   margin-top: -65px;
 }
 .l-header__button-shape {
-  background-color: #FF9100;
+  background-color: #9E0081;
   width: 125px;
   block-size: 35px;
   border-radius: 17px;
@@ -95,7 +94,7 @@ img {
   left: 15px;
 }
 .l-header__title-certificate i {
-  color: #FF9100;
+  color: #9E0081;
   font-size: 24px;
 }
 .l-header__subtitle {
@@ -236,6 +235,7 @@ img {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 20px;
   font-size: 1.25rem;
 }
@@ -328,7 +328,6 @@ img {
 }
 .home-main__expertises-img {
   height: 50px;
-  width: 50px;
 }
 .home-main__expertises-subtitle {
   margin-inline-start: 20px;
@@ -345,7 +344,7 @@ img {
 }
 .footer__link i {
   font-size: 1.25rem;
-  color: #FF9100;
+  color: #9E0081;
 }
 .footer__copyright {
   margin-block: 10px;
@@ -375,7 +374,7 @@ img {
   width: 60%;
   transition: transform 0.2s ease-out;
   transform: scaleX(0);
-  background-color: #FF9100;
+  background-color: #9E0081;
   transform-origin: center;
 }
 .home-main__category.active::after {

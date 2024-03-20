@@ -6,9 +6,10 @@
     <script
       src="https://kit.fontawesome.com/a18847257a.js"
       crossorigin="anonymous"
+      defer
     ></script>
-    <script src="./scripts/main.js"></script>
-    <link href="./styles/home.css" rel="stylesheet" />
+    <script src="./scripts/min.main.js" defer></script>
+    <link href="./styles/min.home.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
           ><img src="./assets/owl-logo.svg" alt="logo" width="36" height="36"
         /></a>
       </nav>
-      <div class="u-container l-header__container">
+      <div class="l-header__container u-container">
         <img
           src="assets/banner.jpg"
           class="l-header__banner"
@@ -80,7 +81,7 @@
         <li class="home-main__category" id="expertises">Expertises</li>
       </ul>
       <section
-        class="home-main__card-feed home-main__section"
+        class="home-main__card-feed home-main__section active"
         id="feed-content"
       >
         <div class="home-main__card">
@@ -92,7 +93,7 @@
             <img
               src="assets/owl-avatar.svg"
               class="home-main__card-avatar"
-              alt="avatar"
+              alt="avatar" width="120" height="120"
             />
             <div class="home-main__card-content-description">
               <div class="home-main__card-name-date">
@@ -113,7 +114,7 @@
               </p>
               <div class="home-main__card-action">
                 <i class="fa-regular fa-heart"></i>
-                <a href=""><i class="fa-solid fa-link"></i></a>
+                <a aria-label="Github link" href=""><i class="fa-solid fa-link"></i></a>
               </div>
             </div>
           </div>
@@ -123,7 +124,7 @@
             <img
               src="assets/owl-avatar.svg"
               class="home-main__card-avatar"
-              alt="avatar"
+              alt="avatar" width="120" height="120"
             />
             <div class="home-main__card-content-description">
               <div class="home-main__card-name-date">
@@ -151,12 +152,12 @@
                     src="assets/AquariumPhoto2.png"
                     alt=""
                     width="290"
-                    height=""
+                    height="320"
                   />
               </div>
               <div class="home-main__card-action">
                 <i class="fa-regular fa-heart"></i>
-                <a href="https://github.com/ALwGNY/AquariumResto/tree/main"
+                <a aria-label="Github link" href="https://github.com/ALwGNY/AquariumResto/tree/main"
                   ><i class="fa-solid fa-link"></i
                 ></a>
               </div>
@@ -168,7 +169,7 @@
             <img
               src="assets/owl-avatar.svg"
               class="home-main__card-avatar"
-              alt="avatar"
+              alt="avatar" width="120" height="120"
             />
             <div class="home-main__card-content-description">
               <div class="home-main__card-name-date">
@@ -179,7 +180,7 @@
               </div>
               <p class="home-main__card-tag">🌱 Argent Bank</p>
               <p class="home-main__card-subtitle">
-                Argent bank is an application developed with <b>5React</b>, i
+                Argent bank is an application developed with <b>React</b>, i
                 have learn how to communicate with a database to connect and
                 change username. I also have learn how to do a
                 <b>routes for a API</b> and the bases of <b>Redux</b> to manage
@@ -195,7 +196,7 @@
               </div>
               <div class="home-main__card-action">
                 <i class="fa-regular fa-heart"></i>
-                <a href="https://github.com/ALwGNY/Argent-Bank"
+                <a aria-label="Github link" href="https://github.com/ALwGNY/Argent-Bank"
                   ><i class="fa-solid fa-link"></i
                 ></a>
               </div>
@@ -207,7 +208,7 @@
             <img
               src="assets/owl-avatar.svg"
               class="home-main__card-avatar"
-              alt="avatar"
+              alt="avatar" width="120" height="120"
             />
             <div class="home-main__card-content-description">
               <div class="home-main__card-name-date">
@@ -233,7 +234,7 @@
               </div>
               <div class="home-main__card-action">
                 <i class="fa-regular fa-heart"></i>
-                <a href="https://github.com/ALwGNY/Nina-Carducci"
+                <a aria-label="Github link" href="https://github.com/ALwGNY/Nina-Carducci"
                   ><i class="fa-solid fa-link"></i
                 ></a>
               </div>
@@ -310,10 +311,7 @@
           <div class="home-main__expertises-subtitle-container">
             <img
               class="home-main__expertises-img"
-              src="assets/ReactLogo.svg.png"
-              alt=""
-              width="50"
-              height="50"
+              src="assets/ReactLogo.svg.webp"
             />
             <p class="home-main__expertises-subtitle">
               I like this framework because the versatility and simplicity of
@@ -328,10 +326,7 @@
           <div class="home-main__expertises-subtitle-container">
             <img
               class="home-main__expertises-img"
-              src="assets/SassLogo.png"
-              alt=""
-              width="50"
-              height="50"
+              src="assets/SassLogo.webp"
             />
             <p class="home-main__expertises-subtitle">
               Sass is a preprocessor allowing me to have more readable and less
@@ -341,10 +336,10 @@
         </div>
       </section>
     </main>
-    <footer class="footer__info u-container">
+    <footer class="footer__info">
       <div class="footer__link">
-        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a aria-label="Linkedin link" href="https://www.linkedin.com/in/alexis-g-6489a91b4/?trk=public-profile-join-page"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a aria-label="Github link" href="https://github.com/ALwGNY"><i class="fa-brands fa-github"></i></a>
       </div>
       <p class="footer__copyright">Alexis Gournay © 2024</p>
     </footer>

@@ -31,7 +31,7 @@
     width: 60%;
     transition: transform 0.2s ease-out;
     transform: scaleX(0);
-    background-color: base.$orange-main;
+    background-color: base.$purple-main;
     transform-origin: center;
   }
   &__category.active::after {
