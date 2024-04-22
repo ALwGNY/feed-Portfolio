@@ -1,5 +1,6 @@
 @use "../base";
-.footer {
+
+.footer { 
     &__info {
       display: flex;
       flex-direction: column;
@@ -13,5 +14,8 @@
     &__copyright {
       margin-block: 10px;
       font-size: base.$fs-14;
+      font-family: base.$ff-Opensans;
+      font-weight: 600;
+      color: base.$grey-light;
     }
   }

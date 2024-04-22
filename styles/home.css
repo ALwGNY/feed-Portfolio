@@ -349,6 +349,9 @@ img {
 .footer__copyright {
   margin-block: 10px;
   font-size: 0.875rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #5d6e7c;
 }
 
 .home-main__list {
