@@ -135,6 +135,16 @@ img {
   .l-header__button-contact {
     margin-top: -45px;
   }
+  .l-header__subtitle-presentation {
+    font-size: 0.875rem;
+  }
+  .l-header__info {
+    padding-inline-end: 12px;
+    gap: 5px;
+  }
+  .l-header__info p {
+    font-size: 0.875rem;
+  }
 }
 .home-main__card-feed.active {
   display: block;
@@ -184,6 +194,7 @@ img {
   color: #5d6e7c;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
 }
 .home-main__card-date .fa-solid {

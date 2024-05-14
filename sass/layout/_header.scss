@@ -1,123 +1,132 @@
 @use "../base";
 
 // NAVBAR
-.l-header {  
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        padding: 6px 12px;
-        align-self: center;
-        position: fixed;
-        width: 100%;
-        background-color: rgba(base.$white-main, 0.4);
-        &__link {
-            display: flex;
-        }
-        &__button-toggle {
-            border:none;
-        }
-        &__button-toggle:hover {
-            background-color: base.$grey-light;
-            border-radius: 3px;
-        }
+.l-header {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 12px;
+    align-self: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(base.$white-main, 0.4);
+    &__link {
+      display: flex;
     }
+    &__button-toggle {
+      border: none;
+    }
+    &__button-toggle:hover {
+      background-color: base.$grey-light;
+      border-radius: 3px;
+    }
+  }
 }
 
 // HERO SECTION
 
-.l-header { 
-    &__container {
-        padding-block-start: 51px;
-    }   
-    &__content {
-        padding: 0 30px;
+.l-header {
+  &__container {
+    padding-block-start: 51px;
+  }
+  &__content {
+    padding: 0 30px;
+  }
+  &__avatar {
+    border: 3px solid base.$white-main;
+    background-color: base.$white-main;
+    border-radius: 70px;
+    margin-top: -75px;
+  }
+  &__button-contact {
+    display: flex;
+    justify-content: end;
+    margin-top: -65px;
+  }
+  &__button-shape {
+    background-color: base.$purple-main;
+    width: 125px;
+    block-size: 35px;
+    border-radius: 17px;
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+    color: base.$white-main;
+    font-weight: 600;
+  }
+  &__description {
+    padding-block-start: 35px;
+  }
+  &__title {
+    font-size: base.$fs-32;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__title-certificate {
+    position: relative;
+    padding-inline-start: 10px;
+    img {
+      height: 12px;
+      position: absolute;
+      top: 20px;
+      left: 15px;
     }
-    &__avatar {
-        border: 3px solid base.$white-main;
-        background-color: base.$white-main;
-        border-radius: 70px;
-        margin-top: -75px;
+    i {
+      color: base.$purple-main;
+      font-size: 24px;
     }
-    &__button-contact {
-        display: flex;
-        justify-content: end;
-        margin-top: -65px;
+  }
+  &__subtitle {
+    margin-block-start: 5px;
+    line-height: 1.7;
+    color: base.$grey-dark;
+    font-weight: 600;
+  }
+  &__subtitle-presentation {
+    padding-block-start: 5px;
+    font-size: base.$fs-16;
+    color: base.$grey-light;
+  }
+  &__list-info {
+    padding-block-start: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-inline-end: 30px;
+    p {
+      font-size: base.$fs-14;
+      color: base.$grey-light;
     }
-    &__button-shape {
-        background-color: base.$purple-main;
-        width: 125px;
-        block-size: 35px;
-        border-radius: 17px;
-        display: flex;
-        padding: 0 15px;
-        justify-content: space-between;
-        align-items: center;
-        color: base.$white-main;
-        font-weight: 600;
-    }
-    &__description {
-        padding-block-start: 35px;
-    }
-    &__title {
-        font-size: base.$fs-32;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    &__title-certificate {
-        position: relative;
-        padding-inline-start: 10px;
-        img {
-           height: 12px;
-           position: absolute;
-           top: 20px;
-           left: 15px;
-        }
-        i {
-            color: base.$purple-main;
-            font-size: 24px;
-        }
-    }
-    &__subtitle {
-        margin-block-start: 5px;
-        line-height: 1.7;
-        color: base.$grey-dark;
-        font-weight: 600;
-    }
-    &__subtitle-presentation {
-        padding-block-start: 5px;
-        font-size: base.$fs-16;
-        color: base.$grey-light;
-    }
-    &__list-info {
-        padding-block-start: 30px;
-        display: flex;
-        flex-direction: row;
-    }
-    &__info {
-        display: flex;
-        align-items: center;
-        gap: 7px;
-        padding-inline-end: 30px;
-        p {
-            font-size: base.$fs-14;
-            color: base.$grey-light;
-        }
-    }
+  }
 }
 
 @media (max-width: 740px) {
-    .l-header{
-        &__banner{
-            width: 100%;
-
-        }
-        &__avatar {
-            width: 100px;
-            margin-top: -55px;
-        }
-        &__button-contact {
-            margin-top: -45px;
-        }
+  .l-header {
+    &__banner {
+      width: 100%;
+    }
+    &__avatar {
+      width: 100px;
+      margin-top: -55px;
+    }
+    &__button-contact {
+      margin-top: -45px;
+    }
+    &__subtitle-presentation {
+      font-size: base.$fs-14;
+    }
+    &__info {
+      padding-inline-end: 12px;
+      gap: 5px;
+      p {
+        font-size: base.$fs-14;
+      }
     }
   }
+}
